@@ -51,7 +51,7 @@ console.log(sortArrayDescending([70, 80, 90, 100]));
 
 /* Write a function named lowercaseFirstLetter that takes a string and returns the same string with the first letter lowercased. */
 function lowercaseFirstLetter(str) {
-  return str.toLowerCase(); //This function converts the first letter of a string to lowercase using the toLowerCase() method.
+  return str.charAt(0).toLowerCase() + str.slice(1);
 }
 
 console.log(lowercaseFirstLetter("Hello World"));
